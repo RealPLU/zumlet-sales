@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creator OS by Zumlet — eleven systems, one 90-minute session a week</title>
+<meta name="description" content="Creator OS is eleven modular systems for solo creators: prompt chains, templates and SOPs for content, email, SEO, hooks, tracking and legal. One-time $47. Instant download.">
+<link rel="canonical" href="https://get.zumlet.com/">
+<meta property="og:title" content="Creator OS — your creator business needs an operating system">
+<meta property="og:description" content="Eleven modular systems. One 90-minute session per week. One-time $47, instant download.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --bg:#0b111e; --panel:#111a2b; --line:#1e2b42;
+    --ink:#f1f5f9; --muted:#94a3b8; --dim:#64748b;
+    --accent:#4cb1ca; --accent-2:#349ab4;
+    --amber:#fbbf24; --green:#34d399;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:0}
+  h1{font-size:clamp(2rem,5vw,3.15rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 20px}
+  h2{font-size:clamp(1.4rem,3vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 16px}
+  h3{font-size:1.05rem;margin:0 0 8px}
+  p{margin:0 0 16px}
+  .lede{font-size:1.15rem;color:var(--muted);max-width:44em}
+  .eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+  .muted{color:var(--muted)}
+  .dim{color:var(--dim);font-size:.9rem}
+  a{color:var(--accent)}
+  .cta{display:inline-block;background:var(--accent);color:#05202a;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:10px;font-size:1.05rem;transition:background .15s}
+  .cta:hover{background:#5cc3dc}
+  .cta.secondary{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:600}
+  .cta.secondary:hover{border-color:var(--accent)}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:28px 0 18px}
+  .trustline{display:flex;gap:22px;flex-wrap:wrap;font-size:.88rem;color:var(--muted)}
+  .trustline span::before{content:"✓";color:var(--green);margin-right:7px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:24px 0;font-size:.97rem}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:600}
+  td:first-child{width:46%;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:24px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{color:var(--ink)}
+  .card p{color:var(--muted);font-size:.92rem;margin:0}
+  .group-label{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin:30px 0 10px}
+  pre{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;overflow-x:auto;font-family:var(--mono);font-size:.86rem;line-height:1.75;color:var(--muted)}
+  details{border-bottom:1px solid var(--line);padding:16px 0}
+  summary{cursor:pointer;font-weight:600;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"+";color:var(--accent);margin-right:12px;font-family:var(--mono)}
+  details[open] summary::before{content:"−"}
+  details p{margin:12px 0 0;color:var(--muted);font-size:.95rem}
+  .price-box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px;margin:28px 0}
+  .price{font-size:3rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .price small{font-size:1rem;font-weight:500;color:var(--muted);letter-spacing:0}
+  .includes{list-style:none;padding:0;margin:24px 0 0;color:var(--muted);font-size:.95rem}
+  .includes li{padding:7px 0}
+  .includes li::before{content:"→";color:var(--accent);margin-right:10px}
+  .badge-slot{border:1px dashed var(--line);border-radius:10px;padding:14px;margin:16px 0;font-family:var(--mono);font-size:.78rem;color:var(--dim)}
+  footer{border-top:1px solid var(--line);padding:40px 0 56px;color:var(--dim);font-size:.86rem}
+  footer a{color:var(--muted)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin:20px 0}
+  .two div{padding:12px 0;border-bottom:1px solid var(--line)}
+  .two strong{display:block;margin-bottom:4px}
+  .two .no strong{color:#f87171}
+  .two .yes strong{color:var(--green)}
+  @media(max-width:640px){.two{grid-template-columns:1fr}td:first-child{width:auto}body{font-size:16px}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<section style="padding-top:72px">
+  <div class="eyebrow">Creator OS — eleven systems, one session</div>
+  <h1>Your creator business needs an operating system.</h1>
+  <p class="lede">Eleven modular systems that turn one 90-minute session a week into a week of content, email, SEO and tracking — without figuring it out from scratch every Monday.</p>
+  <div class="cta-row">
+    <a class="cta" href="BUY_LINK_PLACEHOLDER">Get Creator OS — $47</a>
+    <a class="cta secondary" href="#whats-inside">See what's inside</a>
+  </div>
+  <div class="trustline">
+    <span>One-time payment</span>
+    <span>Instant digital download</span>
+    <span>60-day return period</span>
+    <span>Free updates</span>
+  </div>
+</section>
+
+<section>
+  <h2>You don't have a motivation problem. You have a systems problem.</h2>
+  <table>
+    <thead><tr><th>What your week looks like now</th><th>What it looks like with Creator OS</th></tr></thead>
+    <tbody>
+      <tr><td>Staring at a blank screen, deciding what to post</td><td>Open a prompt that already knows what to ask</td></tr>
+      <tr><td>Rewriting the same idea for five platforms</td><td>One topic → platform-native posts in 90 minutes</td></tr>
+      <tr><td>Guessing at hooks and hashtags</td><td>Pull from 130 proven hook formulas</td></tr>
+      <tr><td>Twelve tools that don't talk to each other</td><td>One folder per system, everything where you expect it</td></tr>
+      <tr><td>Something left over every single day</td><td>Batch once. The other six days are yours.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="whats-inside">
+  <h2>What's inside: eleven systems</h2>
+  <p class="lede">Each module ships the same way — a numbered prompt chain, the templates the output lands in, an SOP that explains the order to run it, and a checklist for the edge cases. Learn one, you've learned all eleven.</p>
+
+  <div class="group-label">Create</div>
+  <div class="grid">
+    <div class="card"><h3>Cross-Post</h3><p>One topic → a week of posts for X, LinkedIn, Instagram, TikTok and Facebook. 8-prompt chain, hashtag optimiser, calendar.</p></div>
+    <div class="card"><h3>Longform</h3><p>YouTube from idea to publish. Script structure, title and thumbnail hooks, retention passes.</p></div>
+    <div class="card"><h3>Blog Works</h3><p>Posts built to rank. Keyword clusters, outlines, SEO briefs, internal linking maps.</p></div>
+    <div class="card"><h3>Remix</h3><p>One long-form asset → fifteen-plus short pieces, with a repurposing decision tree so you know which is worth doing.</p></div>
+  </div>
+
+  <div class="group-label">Grow</div>
+  <div class="grid">
+    <div class="card"><h3>Inbox</h3><p>Lead magnets, welcome flows, promo sequences and a monthly traffic plan that points at the list.</p></div>
+    <div class="card"><h3>Review Stack</h3><p>Affiliate reviews that read like experience, not a spec sheet. Comparison tables and FAQ blocks included.</p></div>
+    <div class="card"><h3>The Hook Engine</h3><p>130 hook formulas, searchable by platform, emotion and content pillar — plus a generator for new ones.</p></div>
+    <div class="card"><h3>Voice</h3><p>A voice document and tone guide that makes every other module sound like you, not like AI.</p></div>
+  </div>
+
+  <div class="group-label">Run</div>
+  <div class="grid">
+    <div class="card"><h3>Dashboard</h3><p>Commissions, pipeline and goals in one tracker — the numbers that decide what you make next.</p></div>
+    <div class="card"><h3>Shield</h3><p>Disclosure, contract and disclaimer templates written for creators, not law firms.</p></div>
+    <div class="card"><h3>Batch &amp; Go OS</h3><p>The 90-minute session itself: playbook, timed agenda, intake sheet and a working session timer.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>One module. One folder. One session.</h2>
+  <p class="lede">Every module runs on the same rhythm. The prompts change. The shape doesn't.</p>
+<pre>WEEKLY BATCH — 90 MINUTES
+├──  0:00– 5:00   Open the module → choose a topic
+├──  5:00–15:00   Run the angle builder
+├── 15:00–30:00   Pick hooks (or run the generator)
+├── 30:00–70:00   Generate for each platform, one pass each
+├── 70:00–80:00   Optimise hashtags and CTAs
+├── 80:00–85:00   Drop into the calendar
+└── 85:00–90:00   Close the folder. Done for the week.</pre>
+</section>
+
+<section>
+  <h2>What you actually receive</h2>
+  <div class="two">
+    <div class="yes"><strong>What it is</strong>A digital download — one ZIP file containing all eleven module folders in Markdown, HTML and CSV, plus a start-here guide.</div>
+    <div class="no"><strong>What it isn't</strong>Not a subscription, not a course you have to sit through, not a login you lose access to.</div>
+    <div class="yes"><strong>Works with what you have</strong>Any capable AI assistant — ChatGPT, Claude, Gemini. Any spreadsheet for the CSV trackers. Any browser for the HTML templates.</div>
+    <div class="no"><strong>No tool to install</strong>Nothing to connect, no API key, no plugin, no monthly fee.</div>
+  </div>
+  <p class="muted" style="margin-top:24px">Delivered instantly by email after checkout, and always retrievable from your Digistore24 customer portal. Updates are free for life.</p>
+</section>
+
+<section>
+  <h2>Who it's for</h2>
+  <div class="two">
+    <div class="yes"><strong>Buy it if</strong>You already publish, or you're about to, and the bottleneck is production — you know what good looks like, you're tired of rebuilding the process every week.</div>
+    <div class="no"><strong>Skip it if</strong>You want someone to do the posting for you, or you've never made a piece of content and want to learn the fundamentals first. This is a system, not a service.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Questions people actually ask</h2>
+  <details><summary>Do I have to use all eleven?</summary><p>No. Most people start with three or four — Cross-Post, The Hook Engine, one growth module and Batch &amp; Go OS — and add the rest when a specific bottleneck shows up.</p></details>
+  <details><summary>Are these prompts or finished products?</summary><p>Both. Every module includes a tested prompt chain and the templates, SOPs and checklists you need to use the output. You don't need to know anything about prompt engineering.</p></details>
+  <details><summary>Which platforms are covered?</summary><p>Cross-Post covers X/Twitter, LinkedIn, Instagram, TikTok and Reels, and Facebook. The Hook Engine adds Pinterest, YouTube and email. Longform is YouTube-specific.</p></details>
+  <details><summary>Do the modules work together?</summary><p>That's the design. Cross-Post output feeds Remix. Voice trains every module to sound like you. The Hook Engine plugs into anything that needs a hook. Batch &amp; Go OS schedules the session.</p></details>
+  <details><summary>Can I use this for client work?</summary><p>Yes — you own everything you produce and you can use it for paying clients. You can't resell or redistribute the files themselves. Full terms in the licence inside the download.</p></details>
+  <details><summary>What if it isn't for me?</summary><p>You have 60 days from purchase to request a return, for any reason. Full details are in the return policy below and in your Digistore24 customer portal.</p></details>
+  <details><summary>How do I get support?</summary><p>Message <strong>@warrenh</strong> at <a href="https://communi.com/@warrenh">communi.com/@warrenh</a>, or use the contact option in your Digistore24 customer portal. A person reads it.</p></details>
+</section>
+
+<section id="buy">
+  <h2>Get all eleven systems</h2>
+  <div class="price-box">
+    <div class="price">$47 <small>one-time · USD · founder price</small></div>
+    <p class="muted" style="margin-top:14px">Less than most single-tool subscriptions cost for two months — and it doesn't renew.</p>
+    <ul class="includes">
+      <li>All eleven Creator OS modules — prompts, templates, SOPs, checklists</li>
+      <li>Instant download: one ZIP, Markdown, HTML and CSV, no account needed</li>
+      <li>Free updates for life; re-download any time from your Digistore24 portal</li>
+      <li>Use it for your own content and for paying client work</li>
+      <li>60-day return period</li>
+    </ul>
+    <div class="cta-row">
+      <a class="cta" href="BUY_LINK_PLACEHOLDER">Buy now — $47</a>
+    </div>
+    <p class="dim">Payment is processed by Digistore24, which acts as the reseller of this product. Sales tax and VAT are handled by Digistore24. After payment you land on a confirmation page and receive the download link by email.</p>
+
+    <div class="badge-slot">[ PASTE DIGISTORE24 “SALES PAGE BADGE” HERE — required for approval ]</div>
+    <div class="badge-slot">[ PASTE DIGISTORE24 “SALES PAGE FOOTER” HERE — required for approval ]</div>
+  </div>
+</section>
+
+<section>
+  <h2>Return policy</h2>
+  <p>You have <strong>60 days</strong> from the date of purchase to request a return, for any reason. Requests are handled through your Digistore24 customer portal, which is where your order and download are stored. Once a return is approved the purchase price is refunded to your original payment method.</p>
+  <p class="dim">Because this is a digital product delivered immediately, statutory withdrawal rights may be limited once the download has been accessed; the 60-day period above is offered in addition to any statutory rights you have and does not replace them.</p>
+</section>
+
+<section>
+  <h2>Earnings disclaimer</h2>
+  <p class="dim">Creator OS is a set of templates, prompts and procedures. It does not guarantee income, results, growth, reach or sales. Any figures used to describe time savings or outcomes are illustrative, not promises. Your results depend on your effort, your market and factors outside anyone's control. Nothing here is financial, legal or tax advice.</p>
+</section>
+
+<footer>
+  <p>Creator OS is a product of Zumlet. Payments are processed by Digistore24, which acts as the reseller.<br>
+  Support: message <a href="https://communi.com/@warrenh">@warrenh</a> · <a href="/return-policy">Return policy</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
+  <p class="dim">© 2026 Zumlet. All rights reserved.</p>
+</footer>
+
+</div>
+</body>
+</html>
