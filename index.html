@@ -80,9 +80,10 @@
   #system{position:relative;height:600px}
   #system canvas{position:absolute;inset:0;width:100%!important;height:100%!important;opacity:0;transition:opacity 1.2s ease}
   #system.ready canvas{opacity:1}
-  .legend{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);display:flex;gap:18px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);white-space:nowrap}
+  .legend{position:absolute;left:0;right:0;bottom:6px;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+  .legend span{white-space:nowrap}
   .legend b{color:var(--ink-muted);font-weight:600}
-  @media(max-width:560px){.legend{white-space:normal;flex-wrap:wrap;justify-content:center;width:100%;gap:4px 14px;font-size:.7rem}}
+  @media(max-width:560px){.legend{gap:4px 14px;font-size:.7rem}}
   @media(max-width:900px){
     .hero{padding:48px 0 40px}
     .hero .wrap{grid-template-columns:1fr}
